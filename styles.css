@@ -237,8 +237,9 @@ input[type="file"]::-webkit-file-upload-button:hover {
 
 
 
-.dropdown-content a:hover .sub-dropdown-content {
+.dropdown-content:hover .sub-dropdown-content {
   display: block;
+  
 }
 
 .subtechniques-dropdown {
@@ -267,7 +268,7 @@ input[type="file"]::-webkit-file-upload-button:hover {
 
 .subtechniques-dropdown a {
   color: black;
-  padding: 8px 12px;
+  /* padding: 8px 12px; */
   text-decoration: none;
   display: block;
   border-bottom: 1px solid #ddd;
