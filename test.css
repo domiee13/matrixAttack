@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.vertical-menu {
+    width: 200px;
+    position: relative;
+}
+
+.menu-item {
+    background-color: #333;
+    margin-bottom: 2px;
+    position: relative; /* Important for submenu positioning */
+}
+
+.menu-item a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #333;
+}
+
+.menu-item a:hover {
+    background-color: #575757;
+}
+
+.submenu-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Align submenu to the right of the parent menu */
+    background-color: #444;
+    width: 200px;
+}
+
+.menu-item.submenu:hover .submenu-content {
+    display: block;
+}
+
+.submenu-content a {
+    display: block; /* Ensure submenu items are displayed vertically */
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #444;
+}
+
+.submenu-content a:hover {
+   

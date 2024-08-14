@@ -32,6 +32,7 @@ function loadDataFromJson(jsonData) {
 
     step.techniques.forEach((technique) => {
       const techniqueLink = document.createElement("a");
+      techniqueLink.className="sub-dropdown-content";
       techniqueLink.href = "#";
       techniqueLink.textContent = technique.name;
 
@@ -223,7 +224,7 @@ function loadStoredTechniques() {
 function toggleDarkMode() {
   const body = document.body;
   const isDarkMode = body.classList.toggle("dark-mode");
-
+  console.log(body.classList);
   localStorage.setItem("darkMode", isDarkMode ? "enabled" : "disabled");
 }
 
